@@ -1,0 +1,50 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <h1>Lifetimes</h1>
+    <h4>Controller Operations.</h4>
+    <div class="row">
+        <div class="col-2 text-right font-weight-bold">
+            Trancient
+        </div>
+        <div class="col-10 text-left">
+            @ViewBag.Transient.OperationId
+        </div>
+        <div class="col-2 text-right font-weight-bold">
+            Scoped
+        </div>
+        <div class="col-10 text-left">
+            @ViewBag.Scoped.OperationId
+        </div>
+        <div class="col-2 text-right font-weight-bold">
+            Singleton
+        </div>
+        <div class="col-10 text-left">
+            @ViewBag.Singleton.OperationId
+        </div>
+    </div>
+    <br>
+    <h4>OperationService Operations.</h4>
+    <div class="row">
+        <div class="col-2 text-right font-weight-bold">
+            Trancient
+        </div>
+        <div class="col-10 text-left">
+            @ViewBag.Service.TransientOperation.OperationId
+        </div>
+        <div class="col-2 text-right font-weight-bold">
+            Scoped
+        </div>
+        <div class="col-10 text-left">
+            @ViewBag.Service.ScopedOperation.OperationId
+        </div>
+        <div class="col-2 text-right font-weight-bold">
+            Singleton
+        </div>
+        <div class="col-10 text-left">
+            @ViewBag.Service.SingletonOperation.OperationId
+        </div>
+    </div>
+</div>
